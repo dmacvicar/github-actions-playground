@@ -10,6 +10,6 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: Install virtualization tools
-      run: apt-get update && apt-get install libvirt-clients
+      run: sudo apt-get update && sudo apt-get install libvirt-clients
     - name: Check virtualization capabitilies
       run: virt-host-validate
